@@ -134,7 +134,7 @@
                             </div>
                         </div>
                         <div class="d-grid gap-2">
-                            <button class="btn btn-outline-primary" type="button">Send One Time Password</button>
+                            <button class="btn btn-primary" type="button">Send One Time Password</button>
                         </div>
                         <hr>
                         <div class="col-12">
