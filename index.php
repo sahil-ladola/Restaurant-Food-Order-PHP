@@ -138,7 +138,7 @@
                         </div>
                         <hr>
                         <div class="col-12">
-                            Don't have an account? <a href="#" style="text-decoration: none;"><strong>Sign up</strong></a>
+                            Don't have an account? <a href="#" style="text-decoration: none;"><strong>Create account</strong></a>
                         </div>
                     </form>
                 </div>
