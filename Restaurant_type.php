@@ -15,7 +15,7 @@
     <header class="p-3 border-bottom sticky-top bg-light">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a href="/Project_demo/Restaurant/index.php" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                <a href="/Project_demo/Restaurant/Restaurant_type.php" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
 
                     <img class="bi me-2" width="40" height="40" role="img" aria-label="Bootstrap" src="/Project_demo/Image/LOGO/foodive-logos_black.png" alt="FOODIVE">
                 </a>
@@ -42,7 +42,7 @@
                     <p class="small">Restaurant name, Address, Contact no. , Owner details</p>
                 </div>
 
-                <div class="col disabled">
+                <div class="col">
                     <p class="h4">Restaurant Type and Timing</p>
                     <p class="small">Cuisine type, Opening hours</p>
                 </div>

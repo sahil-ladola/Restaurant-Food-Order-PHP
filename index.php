@@ -17,7 +17,7 @@
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a href="/Project_demo/Restaurant/index.php" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
 
-                    <img class="bi me-2" width="40" height="40" role="img" aria-label="Bootstrap" src="/Project_demo/Image/LOGO/foodive-logos_black.png" alt="FOODIVE">
+                    <img class="bi me-2" width="40" height="40" role="img" src="/Project_demo/Image/LOGO/foodive-logos_black.png" alt="FOODIVE">
                 </a>
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-Center mb-md-0">
@@ -32,7 +32,6 @@
                         <img src="/Project_demo/Image/Icon/User.png" id="User" alt="User" width="32" height="32" class="rounded-circle">
                     </a>
                     <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-                        <!-- <li><a class="dropdown-item" href="#"></a></li> -->
                         <li><a class="dropdown-item" href="#">My Restaurant</a></li>
                         <li>
                             <hr class="dropdown-divider">
@@ -55,7 +54,7 @@
             <div class="col-lg-6 mx-auto">
                 <p class="lead mb-5">Get more Customers</p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center pb-5">
-                    <a href="/Project_demo/Restaurant/Restaurant_info.php"><button type="button" class="btn btn-primary btn-lg px-4 gap-3 mb-5">Register your restaurant</button></a>
+                    <a href="/Project_demo/Restaurant/Restaurant_info.php"><button type="button" class="btn btn-outline-primary btn-lg px-4 gap-3 mb-5">Register your restaurant</button></a>
                 </div>
                 <hr>
             </div>
@@ -77,7 +76,7 @@
                             <div class="card-body">
                                 <img src="/Project_demo/Image/Icon/Restro.svg" height="70" width="70" class="card-img-top mb-2" alt="Restro_icon">
                                 <h5 class="card-title text-center">300+</h5>
-                                <p class="card-text text-center">Restaurant Listed.</p>
+                                <p class="card-text text-center">Restaurant Listed</p>
                             </div>
                         </div>
                     </div>
@@ -86,7 +85,7 @@
                             <div class="card-body">
                                 <img src="/Project_demo/Image/Icon/Order.svg" height="70" width="70" class="card-img-top mb-2" alt="Order_icon">
                                 <h5 class="card-title text-center">5000+</h5>
-                                <p class="card-text text-center">Monthly Orders.</p>
+                                <p class="card-text text-center">Monthly Orders</p>
                             </div>
                         </div>
                     </div>
@@ -95,7 +94,7 @@
                             <div class="card-body">
                                 <img src="/Project_demo/Image/Icon/Customer.svg" height="70" width="70" class="card-img-top mb-2" alt="Customer_icon">
                                 <h5 class="card-title text-center">700+</h5>
-                                <p class="card-text text-center">Monthly Customers.</p>
+                                <p class="card-text text-center">Monthly Customers</p>
                             </div>
                         </div>
                     </div>
@@ -104,7 +103,7 @@
                             <div class="card-body">
                                 <img src="/Project_demo/Image/Icon/Delivery.svg" height="70" width="70" class="card-img-top mb-2" alt="Delivery_icon">
                                 <h5 class="card-title text-center">300+</h5>
-                                <p class="card-text text-center">Delivery Partners.</p>
+                                <p class="card-text text-center">Delivery Partners</p>
                             </div>
                         </div>
                     </div>
@@ -122,36 +121,33 @@
 
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
             <div class="col d-flex align-items-start">
-                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <div class="icon-square rounded bg-light text-dark flex-shrink-0 me-3">
                     <img src="/Project_demo/Image/Icon/Restro.svg" class="bi" alt="Restro-icon">
                 </div>
                 <div class="mb-4">
                     <h2>Step 1</h2>
                     <h6>Register your restaurant</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, iste.</p>
-
                 </div>
             </div>
             <div class="col d-flex align-items-start">
-                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <div class="icon-square rounded bg-light text-dark flex-shrink-0 me-3">
                     <img src="/Project_demo/Image/Icon/Order.svg" class="bi" alt="Order-icon">
                 </div>
                 <div class="mb-4">
                     <h2>Step 2</h2>
                     <h6>Get order online</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, iste.</p>
-
                 </div>
             </div>
             <div class="col d-flex align-items-start">
-                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <div class="icon-square rounded bg-light text-dark flex-shrink-0 me-3">
                     <img src="/Project_demo/Image/Icon/Delivery.svg" class="bi" alt="Delivery-icon">
                 </div>
                 <div class="mb-4">
                     <h2>Step 3</h2>
                     <h6>Deliver to customer</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, iste.</p>
-
                 </div>
             </div>
         </div>

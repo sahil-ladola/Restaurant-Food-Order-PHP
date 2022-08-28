@@ -15,7 +15,7 @@
     <header class="p-3 border-bottom sticky-top bg-light">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a href="/Project_demo/Restaurant/index.php" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                <a href="/Project_demo/Restaurant/Restaurant_Upload_images.php" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
 
                     <img class="bi me-2" width="40" height="40" role="img" aria-label="Bootstrap" src="/Project_demo/Image/LOGO/foodive-logos_black.png" alt="FOODIVE">
                 </a>
@@ -42,7 +42,7 @@
                     <p class="small">Restaurant name, Address, Contact no. , Owner details</p>
                 </div>
 
-                <div class="col disabled">
+                <div class="col">
                     <p class="h4">Restaurant Type and Timing</p>
                     <p class="small">Cuisine type, Opening hours</p>
                 </div>
@@ -59,209 +59,39 @@
                 <p class="display-6">Menu images</p>
                 <p class="small">Your menu will be visible to Customers.</p>
             </div>
-            <div class="container pb-3">
-                <div class="row">
-                    <div class="col px-5">
-                        <div class="form-check py-1">
-                            <input class="form-check-input" type="checkbox"  id="Bakery">
-                            <label class="form-check-label" for="Bakery">
-                                Bakery
-                            </label>
-                        </div>
-                        <div class="form-check py-1">
-                            <input class="form-check-input" type="checkbox"  id="Bar">
-                            <label class="form-check-label" for="Bar">
-                                Bar
-                            </label>
-                        </div>
-                        <div class="form-check py-1">
-                            <input class="form-check-input" type="checkbox"  id="BeverageShop">
-                            <label class="form-check-label" for="BeverageShop">
-                                Beverage Shop
-                            </label>
-                        </div>
-                        <div class="form-check py-1">
-                            <input class="form-check-input" type="checkbox"  id="Bhojanalya">
-                            <label class="form-check-label" for="Bhojanalya">
-                                Bhojanalya
-                            </label>
-                        </div>
-                        <div class="form-check py-1">
-                            <input class="form-check-input" type="checkbox"  id="Cafe">
-                            <label class="form-check-label" for="Cafe">
-                                Cafe
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col px-5">
-                        <div class="form-check py-1">
-                            <input class="form-check-input" type="checkbox"  id="Club">
-                            <label class="form-check-label" for="Club">
-                                Club
-                            </label>
-                        </div>
-                        <div class="form-check py-1">
-                            <input class="form-check-input" type="checkbox"  id="DessertParlour">
-                            <label class="form-check-label" for="DessertParlour">
-                                Dessert Parlour
-                            </label>
-                        </div>
-                        <div class="form-check py-1">
-                            <input class="form-check-input" type="checkbox"  id="Dhaba">
-                            <label class="form-check-label" for="Dhaba">
-                                Dhaba
-                            </label>
-                        </div>
-                        <div class="form-check py-1">
-                            <input class="form-check-input" type="checkbox"  id="FoodCourt">
-                            <label class="form-check-label" for="FoodCourt">
-                                Food Court
-                            </label>
-                        </div>
-                        <div class="form-check py-1">
-                            <input class="form-check-input" type="checkbox"  id="FoodTruck">
-                            <label class="form-check-label" for="FoodTruck">
-                                Food Truck
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col px-5">
-                        <div class="form-check py-1">
-                            <input class="form-check-input" type="checkbox"  id="Lounge">
-                            <label class="form-check-label" for="Lounge">
-                                Lounge
-                            </label>
-                        </div>
-                        <div class="form-check py-1">
-                            <input class="form-check-input" type="checkbox"  id="Mess">
-                            <label class="form-check-label" for="Mess">
-                                Mess
-                            </label>
-                        </div>
-                        <div class="form-check py-1">
-                            <input class="form-check-input" type="checkbox"  id="PaanShop">
-                            <label class="form-check-label" for="PaanShop">
-                                Paan Shop
-                            </label>
-                        </div>
-                        <div class="form-check py-1">
-                            <input class="form-check-input" type="checkbox"  id="QuickBites">
-                            <label class="form-check-label" for="QuickBites">
-                                Quick Bites
-                            </label>
-                        </div>
-                        <div class="form-check py-1">
-                            <input class="form-check-input" type="checkbox"  id="SweetShop">
-                            <label class="form-check-label" for="SweetShop">
-                                Sweet Shop
-                            </label>
-                        </div>
-                    </div>
-                </div>
+            <div class="input-group mb-3 px-5">
+                <label class="input-group-text" for="UploadMenu">Upload Menu Images</label>
+                <input type="file" class="form-control" id="UploadMenu" multiple>
             </div>
         </div>
 
-        <div class="container border shadow rounded my-5 py-3">
+        <div class="container border shadow rounded my-3 py-3">
             <div class="details px-5 py-3">
-                <p class="display-6">Type of cuisines</p>
-                <p class="small">Enter type which best describe food.</p>
-                <div class="form">
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Type of cuisines">
-                        <label for="floatingInput">Type of cuisines</label>
-                    </div>
-                </div>
-                <p class="small">Example : Pizza , Burger , Chinese , Street Food , Fast Food , Desserts.</p>
+            <p class="display-6">Restaurant images</p>
+                <p class="small">Upload picture of restaurant.</p>
             </div>
-
+            <div class="input-group mb-3 px-5">
+                <label class="input-group-text" for="UploadRestroImage">Upload Restaurant Images</label>
+                <input type="file" class="form-control" id="UploadRestroImage" multiple>
+            </div>
         </div>
 
-        <div class="container border shadow rounded my-5 py-3">
+        <div class="container border shadow rounded mt-3 py-3 mb-5">
             <div class="details px-5 py-3">
-                <p class="display-6">Restaurant opening hours</p>
-                <p class="small">Restaurant opening and closing hours.</p>
+            <p class="display-6">Food images</p>
+                <p class="small">Upload picture of food.</p>
             </div>
-            <div class="container text-center">
-                <div class="row justify-content-md-center">
-                    <div class="form-group col-md-3">
-                        <label for="time">Open at</label>
-                        <div class="input-group">
-                            <input type="time" class="form-control timePicker">
-                        </div>
-                    </div>
-                    <div class="col-md-auto">
-                        <p class="text-secondary"> to </p>
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="time">Close at</label>
-                        <div class="input-group">
-                            <input type="time" class="form-control timePicker">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container my-5">
-                <div class="details px-5 py-3">
-                    <p class="display-6">Open days</p>
-                    <p class="small">Mark open days</p>
-                </div>
-                <div class="container pb-3">
-                    <div class="row">
-                        <div class="col px-5">
-                            <div class="form-check py-1">
-                                <input class="form-check-input" type="checkbox"  id="Monday">
-                                <label class="form-check-label" for="Monday">
-                                    Monday
-                                </label>
-                            </div>
-                            <div class="form-check py-1">
-                                <input class="form-check-input" type="checkbox"  id="Tuesday">
-                                <label class="form-check-label" for="Tuesday">
-                                    Tuesday
-                                </label>
-                            </div>
-                            <div class="form-check py-1">
-                                <input class="form-check-input" type="checkbox"  id="Wednesday">
-                                <label class="form-check-label" for="Wednesday">
-                                    Wednesday
-                                </label>
-                            </div>
-                            <div class="form-check py-1">
-                                <input class="form-check-input" type="checkbox"  id="Thursday">
-                                <label class="form-check-label" for="Thursday">
-                                    Thursday
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col px-5">
-                            <div class="form-check py-1">
-                                <input class="form-check-input" type="checkbox"  id="Friday">
-                                <label class="form-check-label" for="Friday">
-                                    Friday
-                                </label>
-                            </div>
-                            <div class="form-check py-1">
-                                <input class="form-check-input" type="checkbox"  id="Saturday">
-                                <label class="form-check-label" for="Saturday">
-                                    Saturday
-                                </label>
-                            </div>
-                            <div class="form-check py-1">
-                                <input class="form-check-input" type="checkbox"  id="Sunday">
-                                <label class="form-check-label" for="Sunday">
-                                    Sunday
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="input-group mb-3 px-5">
+                <label class="input-group-text" for="UploadFoodImage">Upload Food Images</label>
+                <input type="file" class="form-control" id="UploadFoodImage" multiple>
             </div>
         </div>
+
         <div class="container">
             <nav class="navbar fixed-bottom bg-light">
                 <div class="container">
-                    <a href="/Project_demo/Restaurant/Restaurant_info.php"><button class="btn btn-outline-secondary btn-lg">Go Back</button></a>
-                    <a href="/Project_demo/Restaurant/Restaurant_Upload_images.php"><button class="btn btn-success btn-lg">Next</button></a>
+                    <a href="/Project_demo/Restaurant/Restaurant_type.php"><button class="btn btn-outline-secondary btn-lg">Go Back</button></a>
+                    <a href="#"><button class="btn btn-success btn-lg">Done</button></a>
                 </div>
             </nav>
         </div>

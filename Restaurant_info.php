@@ -9,6 +9,12 @@
 
     <title>FOODIVE | Add a Restaurant</title>
     <link rel="shortcut icon" href="/Project_demo/Image/Favicon/Favicon.png" type="image/x-icon">
+
+    <style>
+        <?php
+        require "C:/xampp/htdocs/Project_demo/CSS/OTP.css";
+        ?>
+    </style>
 </head>
 
 <body>
@@ -42,7 +48,7 @@
                     <p class="small">Restaurant name, Address, Contact no. , Owner details</p>
                 </div>
 
-                <div class="col disabled">
+                <div class="col">
                     <p class="h4">Restaurant Type and Timing</p>
                     <p class="small">Cuisine type, Opening hours</p>
                 </div>
@@ -61,12 +67,12 @@
             </div>
             <div class="form px-5">
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Restaurant name">
-                    <label for="floatingInput">Restaurant name </label>
+                    <input type="text" class="form-control" id="RestroName" placeholder="Restaurant name">
+                    <label for="RestroName">Restaurant name </label>
                 </div>
                 <div class="form-floating mb-3">
-                    <textarea class="form-control" placeholder="Restaurant address" id="floatingTextarea"></textarea>
-                    <label for="floatingTextarea">Restaurant address</label>
+                    <textarea class="form-control" placeholder="Restaurant address" id="RestroAddress"></textarea>
+                    <label for="RestroAddress">Restaurant address</label>
                 </div>
             </div>
         </div>
@@ -79,11 +85,13 @@
             <div class="form px-5">
                 <div class="input-group flex-nowrap input-group-lg mb-3">
                     <span class="input-group-text" id="addon-wrapping">+91</span>
-                    <input type="text" class="form-control" placeholder="Mobile number" aria-label="Mobile number" aria-describedby="addon-wrapping">
+                    <input type="text" class="form-control" placeholder="Mobile number" aria-label="Mobile number" aria-describedby="addon-wrapping" maxlength="10">
                 </div>
-                <div class="d-grid gap-2 mb-3">
-                    <button class="btn btn-primary" type="button">Verify</button>
-                </div>
+                <a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#OTP">
+                    <div class="d-grid gap-2 mb-3">
+                        <button class="btn btn-primary" type="button">Verify</button>
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -95,22 +103,24 @@
             <div class="form px-5">
                 <div class="input-group flex-nowrap input-group-lg mb-3">
                     <span class="input-group-text" id="addon-wrapping">+91</span>
-                    <input type="text" class="form-control" placeholder="Mobile number of owner" aria-label="Mobile number" aria-describedby="addon-wrapping">
+                    <input type="text" class="form-control" placeholder="Mobile number of owner" aria-label="Mobile number" aria-describedby="addon-wrapping" maxlength="10">
                 </div>
-                <div class="d-grid gap-2 mb-3">
-                    <button class="btn btn-primary" type="button">Verify</button>
-                </div>
+                <a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#OTP">
+                    <div class="d-grid gap-2 mb-3">
+                        <button class="btn btn-primary" type="button">Verify</button>
+                    </div>
+                </a>
                 <div class="row g-2">
                     <div class="col-md mb-3">
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="floatingInputGrid" placeholder="Restaurant owner name">
-                            <label for="floatingInputGrid">Restaurant owner name</label>
+                            <input type="text" class="form-control" id="RestroOwnerName" placeholder="Restaurant owner name">
+                            <label for="RestroOwnerName">Restaurant owner name</label>
                         </div>
                     </div>
                     <div class="col-md mb-3">
                         <div class="form-floating">
-                            <input type="email" class="form-control" id="floatingInputGrid" placeholder="Restaurant owner email address">
-                            <label for="floatingInputGrid">Restaurant owner Email address</label>
+                            <input type="email" class="form-control" id="RestroOwnerEmail" placeholder="Restaurant owner email address">
+                            <label for="RestroOwnerEmail">Restaurant owner Email address</label>
                         </div>
                     </div>
                 </div>
@@ -121,11 +131,16 @@
     <div class="container">
         <nav class="navbar fixed-bottom bg-light">
             <div class="container">
-                <button class="btn btn-outline-secondary btn-lg disabled">Go Back</button>
+                <a href="/Project_demo/Restaurant/index.php"><button class="btn btn-outline-secondary btn-lg">Go Back</button></a>
                 <a href="/Project_demo/Restaurant/Restaurant_type.php"><button class="btn btn-success btn-lg">Next</button></a>
             </div>
         </nav>
     </div>
+
+    <!-- OTP -->
+    <?php
+    require "C:/xampp/htdocs/Project_demo/OTP.php";
+    ?>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
